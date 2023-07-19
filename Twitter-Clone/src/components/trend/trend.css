@@ -1,0 +1,40 @@
+.trend-content {
+  width: 100%;
+  position: relative;
+}
+
+.trend{
+  padding: 12px 16px;
+}
+
+.trend:hover {
+  background-color: rgba(231, 233, 234, 0.1);
+  cursor: pointer;
+}
+
+.trend__lower-text {
+  font-size: 13px;
+  color: rgb(113, 118, 123);
+  letter-spacing: .5px;
+  font-weight: 500;
+}
+
+.trend__tag {
+  font-weight: 700;
+  font-size: 1.13em;
+}
+
+.trend__more {
+  width: 20px;
+
+  height: 1.75rem;
+  color: rgb(113, 118, 123);
+  vertical-align: text-bottom;
+  max-width: 100%;
+  display: inline-block;
+  fill: currentColor;
+
+  position: absolute;
+  top: 1px;
+  right: 0;
+}
