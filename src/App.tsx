@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css'
 import Banner from "./components/banner/Banner";
@@ -13,12 +12,10 @@ import Profile from "./pages/profile/profile";
 import More from "./pages/more/More";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className={"base-content content-style"}>
       <Banner />
-      <BrowserRouter>
+      <BrowserRouter basename="/Twitter-Clone/">
         <Routes>
           <Route path={"/"} element={<Home />} />
           <Route path={"home"} element={<Home />} />

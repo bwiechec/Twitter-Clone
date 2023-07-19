@@ -11,30 +11,28 @@ import Post from "../post/Post";
 import postListData from "../../data/postListData";
 
 function Timeline() {
-  const postCount = 5;
 
   console.log(postListData);
 
-  const changeSelected = (event) => {
+  const changeSelected = (event: Event | undefined) => {
+    const target = event?.target as HTMLElement;
 
     document
       .querySelector(".timeline-nav__sections-option__text.selected")
       ?.classList
       .remove("selected");
 
-    if(event.target.closest('.timeline-nav__sections-option__text')){
-      event
-        .target
-        .closest('.timeline-nav__sections-option__text')
-        .classList
-        .add("selected")
+    if(target?.closest('.timeline-nav__sections-option__text')){
+      target
+        ?.closest('.timeline-nav__sections-option__text')
+        ?.classList
+        ?.add("selected")
     }
     else{
-      event
-        .target
-        .querySelector('.timeline-nav__sections-option__text')
-        .classList
-        .add("selected")
+      target
+        ?.querySelector('.timeline-nav__sections-option__text')
+        ?.classList
+        ?.add("selected")
     }
   }
 
@@ -45,12 +43,12 @@ function Timeline() {
           Home
         </h3>
         <div className={"timeline-nav__sections content-style"}>
-          <div className={"timeline-nav__sections-option content-style"} onClick={(event) => changeSelected(event)}>
+          <div className={"timeline-nav__sections-option content-style"} onClick={() => changeSelected}>
             <div className={"timeline-nav__sections-option__text selected content-style"}>
               For you
             </div>
           </div>
-          <div className={"timeline-nav__sections-option content-style"} onClick={(event) => changeSelected(event)}>
+          <div className={"timeline-nav__sections-option content-style"} onClick={() => changeSelected}>
             <div className={"timeline-nav__sections-option__text content-style"}>
               Following
             </div>

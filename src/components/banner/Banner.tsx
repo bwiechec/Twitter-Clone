@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import "./banner.css"
 import UserActionList from '../userActionList/UserActionList'
 import UserInfo from '../userInfo/UserInfo'

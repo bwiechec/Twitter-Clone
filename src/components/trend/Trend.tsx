@@ -1,6 +1,6 @@
 import './trend.css'
 
-function Trend(props) {
+function Trend(props: any) {
   return(
     <div className={"trend"}>
       <div className={"trend-content"}>

@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import "./userInfo.css"
 import {Avatar} from "@mui/material";
 

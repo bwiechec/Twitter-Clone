@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import doge from '../../assets/doge.png'
 import './Logo.css'
 

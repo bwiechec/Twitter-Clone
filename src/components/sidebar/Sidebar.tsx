@@ -8,8 +8,8 @@ function Sidebar() {
   let prevDirection = 1;
 
   const swapPositioning = () => {
-    const sidebar = document.querySelector('.sidebar-content');
-    const buffer = document.querySelector('.sidebar-buffer');
+    const sidebar = document.querySelector('.sidebar-content') as HTMLElement;
+    const buffer = document.querySelector('.sidebar-buffer') as HTMLElement;
 
     let top = 0;
     let bottom = 0;

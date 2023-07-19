@@ -6,11 +6,11 @@ import AutorenewOutlinedIcon from '@mui/icons-material/AutorenewOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import EqualizerOutlinedIcon from '@mui/icons-material/EqualizerOutlined';
 
-function Post(props) {
+function Post(props: any) {
 
   const unitlist = ["","K","M","G"];
 
-  function formatNumber(number){
+  function formatNumber(number: number){
     const sign = Math.sign(number);
     let unit = 0;
 

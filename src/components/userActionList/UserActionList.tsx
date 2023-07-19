@@ -1,5 +1,3 @@
-import { useState } from 'react'
-import Logo from "../logo/Logo"
 import iconList from "../../data/actionIcons"
 import './UserActionList.css'
 import {StyledButton} from "../styledButton/StyledButton";
@@ -22,7 +20,7 @@ function UserActionList() {
       <nav className={'action-list content-style'}>
         {actionList.map(action => {
           return (
-            <a className={'action-list__link content-style'} href={'/' + action} key={action}>
+            <a className={'action-list__link content-style'} href={'/Twitter-Clone/' + action} key={action}>
               <div className={'action-list__action content-style'}>
                 <div>
                   {iconList[action]}

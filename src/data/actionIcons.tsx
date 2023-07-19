@@ -1,6 +1,12 @@
 import {Fragment} from 'react'
 
-const iconList = {
+interface IIconList {
+  [key: string]: JSX.Element
+}
+
+let iconList: IIconList = {};
+
+iconList = {
   'Home': (
     <Fragment>
       <svg viewBox="0 0 24 24" aria-hidden="true" className="action-icon">
