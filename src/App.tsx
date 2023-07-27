@@ -14,7 +14,7 @@ import More from "./pages/more/More";
 function App() {
   return (
     <div className={"base-content content-style"}>
-      <HashRouter basename="/Twitter-Clone">
+      <HashRouter>
         <Banner />
         <Routes>
           <Route path={"/"} element={<Home />} />
