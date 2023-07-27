@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {BrowserRouter, Routes, Route, HashRouter} from "react-router-dom";
 import './App.css'
 import Banner from "./components/banner/Banner";
 import Home from "./pages/home/Home";
@@ -14,21 +14,21 @@ import More from "./pages/more/More";
 function App() {
   return (
     <div className={"base-content content-style"}>
-      <Banner />
-      <BrowserRouter>
+      <HashRouter basename="/Twitter-Clone">
+        <Banner />
         <Routes>
-          <Route path={"/Twitter-Clone/"} element={<Home />} />
-          <Route path={"/Twitter-Clone/home"} element={<Home />} />
-          <Route path="/Twitter-Clone/explore" element={<Explore />} />
-          <Route path="/Twitter-Clone/Notifications" element={<Notifications />} />
-          <Route path="/Twitter-Clone/Messages" element={<Messages />} />
-          <Route path="/Twitter-Clone/Lists" element={<Lists />} />
-          <Route path="/Twitter-Clone/Bookmarks" element={<Bookmarks />} />
-          <Route path="/Twitter-Clone/Profile" element={<Profile />} />
-          <Route path="/Twitter-Clone/More" element={<More />} />
-          <Route path="/Twitter-Clone/*" element={<NoPage />} />
+          <Route path={"/"} element={<Home />} />
+          <Route path={"/home"} element={<Home />} />
+          <Route path="/explore" element={<Explore />} />
+          <Route path="/Notifications" element={<Notifications />} />
+          <Route path="/Messages" element={<Messages />} />
+          <Route path="/Lists" element={<Lists />} />
+          <Route path="/Bookmarks" element={<Bookmarks />} />
+          <Route path="/Profile" element={<Profile />} />
+          <Route path="/More" element={<More />} />
+          <Route path="/*" element={<NoPage />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   )
 }

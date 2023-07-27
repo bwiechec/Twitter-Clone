@@ -1,6 +1,7 @@
 import iconList from "../../data/actionIcons"
 import './UserActionList.css'
 import {StyledButton} from "../styledButton/StyledButton";
+import {Link} from "react-router-dom";
 
 const actionList = [
   'Home',
@@ -20,7 +21,7 @@ function UserActionList() {
       <nav className={'action-list content-style'}>
         {actionList.map(action => {
           return (
-            <a className={'action-list__link content-style'} href={'/Twitter-Clone/' + action} key={action}>
+            <Link className={'action-list__link content-style'} to={action} key={action}>
               <div className={'action-list__action content-style'}>
                 <div>
                   {iconList[action]}
@@ -29,7 +30,7 @@ function UserActionList() {
                   {action}
                 </div>
               </div>
-            </a>
+            </Link >
           )
         })}
         <StyledButton
