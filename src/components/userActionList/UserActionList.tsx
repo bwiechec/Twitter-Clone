@@ -20,7 +20,7 @@ function UserActionList() {
       <nav className={'action-list content-style'}>
         {actionList.map(action => {
           return (
-            <a className={'action-list__link content-style'} href={'/Twitter-Clone/' + action} key={action}>
+            <a className={'action-list__link content-style'} href={'/Twitter-Clone/#/' + action} key={action}>
               <div className={'action-list__action content-style'}>
                 <div>
                   {iconList[action]}
