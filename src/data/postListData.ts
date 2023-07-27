@@ -8,7 +8,7 @@ const postListData = [
     "likeCount": 645,
     "viewCount": 123402,
     "postContent": 'Lorem ipsum',
-    "img": '../../assets/post_imgae_1.jpg'
+    "img": './src/assets/post_image_1.jpg'
   },
   {
     "creatorName": "Test Creator2",

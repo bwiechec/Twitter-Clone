@@ -17,16 +17,16 @@ function App() {
       <Banner />
       <BrowserRouter basename="/Twitter-Clone/">
         <Routes>
-          <Route path={"/"} element={<Home />} />
-          <Route path={"home"} element={<Home />} />
-          <Route path="explore" element={<Explore />} />
-          <Route path="Notifications" element={<Notifications />} />
-          <Route path="Messages" element={<Messages />} />
-          <Route path="Lists" element={<Lists />} />
-          <Route path="Bookmarks" element={<Bookmarks />} />
-          <Route path="Profile" element={<Profile />} />
-          <Route path="More" element={<More />} />
-          <Route path="*" element={<NoPage />} />
+          <Route path={"/Twitter-Clone/"} element={<Home />} />
+          <Route path={"/Twitter-Clone/home"} element={<Home />} />
+          <Route path="/Twitter-Clone/explore" element={<Explore />} />
+          <Route path="/Twitter-Clone/Notifications" element={<Notifications />} />
+          <Route path="/Twitter-Clone/Messages" element={<Messages />} />
+          <Route path="/Twitter-Clone/Lists" element={<Lists />} />
+          <Route path="/Twitter-Clone/Bookmarks" element={<Bookmarks />} />
+          <Route path="/Twitter-Clone/Profile" element={<Profile />} />
+          <Route path="/Twitter-Clone/More" element={<More />} />
+          <Route path="/Twitter-Clone/*" element={<NoPage />} />
         </Routes>
       </BrowserRouter>
     </div>

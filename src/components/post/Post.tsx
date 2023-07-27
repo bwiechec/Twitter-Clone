@@ -44,13 +44,15 @@ function Post(props: any) {
 
         <div className={"post-data__content"}>
           {props.postData.postContent}
-          {props.postData.img !== null ?
+          {props.postData.img !== null && props.postData.img !== undefined ?
             <img
               src={props.postData.img}
+              alt={"post_image" + props.postData.img}
               className={"post-data__content-image"}
             />
             :
-            null}
+            null
+          }
         </div>
 
         <div className={"post-data__stats"}>
