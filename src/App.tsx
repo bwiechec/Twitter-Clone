@@ -18,15 +18,15 @@ function App() {
       <BrowserRouter basename="/Twitter-Clone/">
         <Routes>
           <Route path={"/Twitter-Clone/"} element={<Home />} />
-          <Route path={"/Twitter-Clone/#/home"} element={<Home />} />
-          <Route path="/Twitter-Clone/#/explore" element={<Explore />} />
-          <Route path="/Twitter-Clone/#/Notifications" element={<Notifications />} />
-          <Route path="/Twitter-Clone/#/Messages" element={<Messages />} />
-          <Route path="/Twitter-Clone/#/Lists" element={<Lists />} />
-          <Route path="/Twitter-Clone/#/Bookmarks" element={<Bookmarks />} />
-          <Route path="/Twitter-Clone/#/Profile" element={<Profile />} />
-          <Route path="/Twitter-Clone/#/More" element={<More />} />
-          <Route path="/Twitter-Clone/#/*" element={<NoPage />} />
+          <Route path={"/Twitter-Clone/home"} element={<Home />} />
+          <Route path="/Twitter-Clone/explore" element={<Explore />} />
+          <Route path="/Twitter-Clone/Notifications" element={<Notifications />} />
+          <Route path="/Twitter-Clone/Messages" element={<Messages />} />
+          <Route path="/Twitter-Clone/Lists" element={<Lists />} />
+          <Route path="/Twitter-Clone/Bookmarks" element={<Bookmarks />} />
+          <Route path="/Twitter-Clone/Profile" element={<Profile />} />
+          <Route path="/Twitter-Clone/More" element={<More />} />
+          <Route path="/Twitter-Clone/*" element={<NoPage />} />
         </Routes>
       </BrowserRouter>
     </div>
